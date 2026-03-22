@@ -1,0 +1,105 @@
+.page-content {
+  margin-left: 250px;
+  padding: 40px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.page-content h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #1f2937;
+}
+
+.income-form-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 32px;
+}
+
+.income-table-container {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.income-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.income-table thead {
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.income-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.income-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.income-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.amount-cell {
+  font-weight: 600;
+  color: #10b981;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+  color: #6b7280;
+}
+
+.btn-icon.edit:hover {
+  background-color: #dbeafe;
+  color: #2563eb;
+}
+
+.btn-icon.delete:hover {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .page-content h1 {
+    font-size: 1.875rem;
+  }
+}
